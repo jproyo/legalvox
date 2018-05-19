@@ -64,16 +64,25 @@
                         <option value="3">años</option>
                     </select>
                     para el puesto de <input type="text" value="" placeholder="Cajero de Supermecado" data-subline="For example: <em>Paleta</em> or <em>Camarero</em>"/>
+                    <div id="emailDiv">
+                        <br/>
+                        Enviarlo para firmar a <input type="text" value="" placeholder="myaccount@email.com" data-subline="For example: <em>juan@gmail.com</em>"/>
+                        <div class="nl-submit-wrap">
+                            <button id="submitButton2" class="nl-submit" type="submit">Enviar</button>
+                        </div>
+                    </div>
                     <div class="nl-submit-wrap">
-                        <button class="nl-submit" type="submit">Crear</button>
+                        <button id="submitButton" class="nl-submit" type="submit">Crear</button>
                     </div>
                     <div class="nl-overlay"></div>
                 </form>
             </div>
         </div><!-- /container -->
+        <script src="js/jquery.min.js"></script>
         <script src="js/nlform.js"></script>
         <script>
             var nlform = new NLForm( document.getElementById( 'nl-form' ) );
         </script>
+        <script src="js/index.js"></script>
     </body>
 </html>
