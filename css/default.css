@@ -37,6 +37,13 @@ a:active {
     color: #2a3990f0;
 }
 
+.center {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    white-space: nowrap;
+}
+
 /* Header Style */
 .main,
 .container > header {
