@@ -139,6 +139,40 @@ a:active {
     content: "\e003";
 }
 
+.contract {
+    padding: 5em;
+}
+
+.contractText {
+    font-size: 2em;
+    width: 70%;
+    float: left;
+}
+
+.contractStatus {
+    float: right;
+    width: 30%;
+}
+
+.contractStatus > i {
+    float: left;
+    margin-left: 50px;
+}
+
+#contractReady {
+    font-size: 20em;
+}
+
+#contractWaiting {
+    font-size: 14em;
+}
+
+
+.highlight {
+    font-style: italic;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 25em) {
 
     .codrops-icon span {

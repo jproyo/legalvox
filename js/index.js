@@ -40,5 +40,14 @@
         $('#stepPuesto').show();
     });
 
+    $('#contractReady').hide();
+
+    function showReady(){
+        $('#contractReady').fadeIn();
+        $('#contractWaiting').fadeOut();
+    }
+
+    window.setTimeout( showReady, 5000 );
+
 
 })(window);

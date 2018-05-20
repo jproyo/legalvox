@@ -10,6 +10,7 @@
         <meta name="author" content="Codrops" />
         <link rel="stylesheet" type="text/css" href="css/default.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body class="nl-blurred">
@@ -18,16 +19,17 @@
             <header>
                 <h1><img src="images/logo.png"/><span>Your legal Platform</span></h1>
             </header>
-            <div class="main clearfix">
-                <h2>Aun no se ha firmado el contrato. Vuelva a consultarlo</h2>
-                <button id="refresh" class="nl-submit">Refresh</button>
+            <div class="clearfix contract">
+                <div class="contractText">
+                    Contrato <span class="highlight">Laboral</span> de <span class="highlight">4 horas semanales</span>. Horario laboral de <span class="highlight">Lunes a Viernes de 16 a 20</span>. El sueldo bruto mensual de <span class="highlight">€ 650</span> con una duración de <span class="highlight">3 meses</span> para el puesto de <span class="highlight">Cajero de Supermercado Día</span>.
+                </div>
+                <div class="contractStatus">
+                    <i id="contractReady" class="far fa-file-pdf"></i>
+                    <i id="contractWaiting" class="fa fa-chalkboard-teacher"></i>
+                </div>
             </div>
         </div><!-- /container -->
         <script src="js/jquery.min.js"></script>
         <script src="js/index.js"></script>
-        <script src="js/nlform.js"></script>
-        <script>
-            var nlform = new NLForm( document.getElementById( 'nl-form' ) );
-        </script>
     </body>
 </html>
