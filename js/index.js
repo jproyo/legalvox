@@ -25,6 +25,10 @@
     });
 
     $('#selectDias').on('changeSelect', function(e){
+        $('#stepBanda').show();
+    });
+
+    $('#selectBanda').on('changeSelect', function(e){
         $('#stepSueldo').show();
     });
 
