@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+[id^=step] {
+    display: inline-block;
+}
+
 /* general style for the form */
 .nl-form {
     width: 100%;
@@ -106,7 +110,7 @@
 }
 
 .nl-dd ul li.nl-dd-checked {
-    color: #2a3990f0;
+    color: #ffffff;
 }
 
 .no-touch .nl-dd ul li:hover {

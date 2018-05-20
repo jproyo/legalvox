@@ -20,16 +20,27 @@
             </header>
             <div class="main clearfix">
                 <form id="nl-form" class="nl-form">
-                    Quiero un Contrato Laboral
-                    <select>
-                        <option value="1" selected>de 4 horas semanales</option>
-                        <option value="2">de 3 meses de duración</option>
-                        <option value="3">Indefindo</option>
+                    Quiero un Contrato
+                    <select id="tipoContrato">
+                        <option value="0" selected>alquiler,laboral,...</option>
+                        <option value="1">Laboral</option>
+                        <option value="2">de Alquiler de vivienda</option>
+                        <option value="3">de Arras</option>
                     </select>
+                    <div id="stepTipo">
+                    <select id="selectHoras">
+                        <option value="0" selected>4 horas, 8 horas,...</option>
+                        <option value="1"> de 4 horas semanales</option>
+                        <option value="2"> de 3 meses de duración</option>
+                        <option value="3"> Indefindo</option>
+                    </select>
+                    </div>
                     <br />
+                    <div id="stepHorario">
                     El horario laboral será
-                    <select>
-                        <option value="1" selected>de Lunes a Viernes</option>
+                    <select id="selectDias">
+                        <option value="0" selected>L a V, Lunes, Martes,...</option>
+                        <option value="1">de Lunes a Viernes</option>
                         <option value="2">Lunes</option>
                         <option value="3">Martes</option>
                         <option value="4">Miercoles</option>
@@ -41,15 +52,16 @@
                          <option value="1">9 a.m. a 6 p.m.</option>
                          <option value="1">9 a.m. a 9 p.m.</option>
                          <option value="1">12 a.m. a 8 p.m.</option>
-                    </select>
+                    </select></div>
                     <br />
-                    El sueldo mensual será de €
-                    <input type="text" value="" placeholder="650" data-subline="For example: € 1500"/>
-                    con una duración de
-                    <select>
+                    <div id="stepSueldo">El sueldo mensual será de €
+                    <input id="inputSueldo" type="text" value="" placeholder="650" data-subline="For example: € 1500"/></div>
+                    <div id="stepDuracion">con una duración de
+                    <select id="selectDuracion">
+                        <option value="0" selected>1, 2 , 3...</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
-                        <option value="3" selected>3</option>
+                        <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="2">5</option>
                         <option value="2">6</option>
@@ -62,8 +74,8 @@
                         <option value="1">dias</option>
                         <option value="2" selected>meses</option>
                         <option value="3">años</option>
-                    </select>
-                    para el puesto de <input type="text" value="" placeholder="Cajero de Supermecado" data-subline="For example: <em>Paleta</em> or <em>Camarero</em>"/>
+                    </select></div>
+                    <div id="stepPuesto">para el puesto de <input type="text" value="" placeholder="Cajero de Supermecado" data-subline="For example: <em>Paleta</em> or <em>Camarero</em>"/>
                     <div id="emailDiv">
                         <br/>
                         Enviarlo para firmar a <input type="text" value="" placeholder="myaccount@email.com" data-subline="For example: <em>juan@gmail.com</em>"/>
@@ -73,6 +85,7 @@
                     </div>
                     <div class="nl-submit-wrap">
                         <button id="submitButton" class="nl-submit" type="submit">Crear</button>
+                    </div>
                     </div>
                     <div class="nl-overlay"></div>
                 </form>
